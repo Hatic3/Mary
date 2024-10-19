@@ -3,8 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CounterModule } from './counter/counter.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// MODULES CUSTOM
+import { CounterModule } from './counter/counter.module';
+import { ArticuloModule } from './articulo/articulo/articulo.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
 
     // COMPONENTES CUSTOM
-    CounterModule
+    CounterModule,
+    ArticuloModule
   ],
   providers: [],
   bootstrap: [AppComponent]
