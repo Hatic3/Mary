@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListComponent } from './list.component';
 import { MatListModule } from '@angular/material/list'
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { MatListModule } from '@angular/material/list'
   ],
   imports: [
     CommonModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   exports:[ListComponent]
 })

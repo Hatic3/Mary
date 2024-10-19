@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponent implements OnInit {
 
   articulosLst: string[] = ['Batería', 'Filtro', 'Garrafa de Aceite'];
+  artEliminado: string;
   
   constructor() { }
 
@@ -15,7 +16,13 @@ export class ListComponent implements OnInit {
   }
 
   eliminaUltArt() {
-    
+    this.artEliminado = this.articulosLst.pop();
+    console.log(this.artEliminado);
+  }
+
+  reset() {
+    this.articulosLst = ['Batería', 'Filtro', 'Garrafa de Aceite'];
+    this.artEliminado = null;
   }
 
 }
