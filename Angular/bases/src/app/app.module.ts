@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // MODULES CUSTOM
 import { CounterModule } from './counter/counter.module';
 import { ArticuloModule } from './articulo/articulo/articulo.module';
+import { ListModule } from './articulo/list/list.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArticuloModule } from './articulo/articulo/articulo.module';
 
     // COMPONENTES CUSTOM
     CounterModule,
-    ArticuloModule
+    ArticuloModule,
+    ListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
